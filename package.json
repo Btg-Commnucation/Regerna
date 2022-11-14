@@ -1,0 +1,27 @@
+{
+  "name": "regerna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "sass": "sass --watch sass:css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuvedunyel/Regerna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tuvedunyel/Regerna/issues"
+  },
+  "homepage": "https://github.com/Tuvedunyel/Regerna#readme",
+  "volta": {
+    "node": "18.12.1",
+    "npm": "8.19.3"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
