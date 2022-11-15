@@ -65,3 +65,23 @@
     grid-row: 2;
   }
 }
+
+.partners__loop {
+  justify-self: center;
+  width: 100%;
+  grid-row: 3;
+  margin-top: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5.7rem;
+  row-gap: 2.8rem;
+  place-items: center;
+
+  a {
+    display: none;
+  }
+
+  a.active {
+    display: block;
+  }
+}
