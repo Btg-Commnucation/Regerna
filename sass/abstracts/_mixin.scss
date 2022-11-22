@@ -1,0 +1,24 @@
+@use 'variables' as var;
+
+@mixin titleh2 ($color: white, $transform: uppercase) {
+  font-size: 3.6rem;
+  color: $color;
+  text-align: center;
+  text-transform: $transform;
+}
+
+@mixin container ($direction: row, $align: center, $justify: center, $gap: 0, $block: 0, $inline: auto) {
+    width: min(98%, 62%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin titleh3 ($size: 8rem, $textalign: left) {
+  font-size: $size;
+  text-align: $textalign;
+  color: var.$red;
+}

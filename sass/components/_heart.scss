@@ -1,0 +1,42 @@
+@use '../abstracts' as var;
+
+.introduction {
+  position: relative;
+  z-index: 2;
+  top: -20rem;
+}
+
+.introduction .container {
+  @include var.container(column, center, center);
+
+  h2 {
+    @include var.titleh2();
+    margin-bottom: 1.7rem;
+  }
+}
+
+.introduction__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: -17%;
+    top: 0;
+    bottom: 0;
+    margin-block: auto;
+  }
+}
+
+.introduction__text {
+  background: var.$skin;
+  font-size: 1.8rem;
+  padding: 8.6rem 4.4rem 8.6rem 27rem;
+  width: min(100%, 954px);
+
+  p {
+    max-width: 640px;
+  }
+}

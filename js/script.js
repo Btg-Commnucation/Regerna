@@ -26,6 +26,7 @@ if ( btnLink ) {
 
     btnLink.forEach( ( btn ) => {
         btn.addEventListener( "click", (e) => {
+            e.preventDefault();
             let country = e.target.id
             handleClick(country);
         } );
