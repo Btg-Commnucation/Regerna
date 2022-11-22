@@ -8,7 +8,7 @@
 }
 
 @mixin container ($direction: row, $align: center, $justify: center, $gap: 0, $block: 0, $inline: auto) {
-    width: min(98%, 62%);
+    width: min(90%, 1181px);
     margin: 0 auto;
     display: flex;
     flex-direction: $direction;
@@ -21,4 +21,27 @@
   font-size: $size;
   text-align: $textalign;
   color: var.$red;
+}
+
+@mixin breakpoint ($breakpoint) {
+  @if $breakpoint == 'tablet' {
+    @media screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == 'mobile' {
+    @media screen and (max-width: 700px) {
+      @content;
+    }
+  }
+  @else if ($breakpoint == 'laptop') {
+    @media screen and (max-width: 1250px) {
+      @content;
+    }
+  }
+  @else if ($breakpoint ==  'mini') {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
 }
