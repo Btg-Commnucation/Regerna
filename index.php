@@ -23,7 +23,7 @@
             <h2>Introduction</h2>
             <div class="introduction__content">
 				<?php $heart_image = get_field( 'introduction_image' ); ?>
-                <img src="<?= $heart_image ? esc_url( $heart_image['url'] ) : get_template_directory_uri() . '/public/heart.png' ?>"
+                <img src="<?= $heart_image ? esc_url( $heart_image['url'] ) : get_template_directory_uri() . '/public/heart-regerna.svg' ?>"
                      alt="<?= $heart_image ? esc_attr( $heart_image['alt'] ) : 'Image of an heart' ?>">
                 <div class="introduction__text">
                     <p><?= get_field( 'introduction' ); ?></p>

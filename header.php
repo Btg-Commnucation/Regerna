@@ -12,7 +12,7 @@
 <header>
         <div class="logo__container">
             <?php $logo = get_field('logo', 'option')  ?>
-            <img src="<?= $logo ? esc_url($logo['url']) : get_template_directory_uri() . '/public/logo.svg' ?>"
+            <img src="<?= $logo ? esc_url($logo['url']) : get_template_directory_uri() . '/public/logo-regerna.svg' ?>"
                  alt="<?= $logo ? esc_attr($logo['alt']) : 'Logo Regerna' ?>">
         </div>
         <div class="slogan__container">

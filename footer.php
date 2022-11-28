@@ -14,6 +14,8 @@
                 Regenerative Therapies for Cardiac and Vascular Diseases<br/>
                 20, rue Leblanc, 75015 Paris
             </p>
+            <strong class="project-manager">Project Manager:</strong>
+            <p>Cécile Gozlan, inserm-Transfet, France</p>
         </div>
     </div>
 </footer>

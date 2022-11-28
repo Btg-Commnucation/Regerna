@@ -1,4 +1,4 @@
-@use '../abstracts' as var;
+@use "../abstracts" as var;
 
 .introduction {
   position: relative;
@@ -54,6 +54,7 @@
 
 .introduction__text {
   background: var.$skin;
+  border-radius: 77px;
   font-size: 1.8rem;
   padding: 8.6rem 4.4rem 8.6rem 27rem;
   width: min(100%, 954px);
