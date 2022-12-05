@@ -33,8 +33,7 @@
   img {
     position: absolute;
     left: -17%;
-    top: 0;
-    bottom: 0;
+    top: -10%;
     margin-block: auto;
 
     @include var.breakpoint(laptop) {
@@ -73,5 +72,9 @@
 
   p {
     max-width: 640px;
+
+    &:not(:first-of-type) {
+      margin-top: 2rem;
+    }
   }
 }

@@ -1,4 +1,4 @@
-@use '../abstracts' as var;
+@use "../abstracts" as var;
 
 article .container {
   @include var.container(column);
@@ -10,23 +10,25 @@ article .container {
 
 .objectives {
   display: grid;
-  place-items: center;
+  justify-items: center;
+  align-items: start;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.3rem;
 
-  @include var.breakpoint('laptop') {
+  @include var.breakpoint("laptop") {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include var.breakpoint('mobile') {
+  @include var.breakpoint("mobile") {
     grid-template-columns: 1fr;
   }
 
   li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 135px 1fr;
+    place-items: center;
+    height: 100%;
 
     &:nth-of-type(even) .objective__container {
       background: transparent !important;
@@ -44,8 +46,9 @@ article .container {
     border-top-left-radius: 20px;
     padding: 3.2rem 2.6rem;
     color: white;
+    height: 100%;
 
-    p{
+    p {
       font-size: 1.8rem;
     }
   }

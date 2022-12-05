@@ -1,46 +1,54 @@
-@use 'variables' as var;
+@use "variables" as var;
 
-@mixin titleh2 ($color: white, $transform: uppercase) {
+@mixin titleh2($color: white, $transform: uppercase) {
   font-size: 3.6rem;
   color: $color;
   text-align: center;
   text-transform: $transform;
 }
 
-@mixin container ($direction: row, $align: center, $justify: center, $gap: 0, $block: 0, $inline: auto) {
-    width: min(90%, 1181px);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-    gap: $gap;
+@mixin container(
+  $direction: row,
+  $align: center,
+  $justify: center,
+  $gap: 0,
+  $block: 0,
+  $inline: auto
+) {
+  width: min(90%, 1181px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
 }
 
-@mixin titleh3 ($size: 8rem, $textalign: left) {
+@mixin titleh3($size: 8rem, $textalign: left) {
   font-size: $size;
   text-align: $textalign;
   color: var.$red;
 }
 
-@mixin breakpoint ($breakpoint) {
-  @if $breakpoint == 'tablet' {
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == "tablet" {
     @media screen and (max-width: 1000px) {
       @content;
     }
-  }
-  @else if $breakpoint == 'mobile' {
+  } @else if $breakpoint == "mobile" {
     @media screen and (max-width: 700px) {
       @content;
     }
-  }
-  @else if ($breakpoint == 'laptop') {
+  } @else if ($breakpoint == "laptop") {
     @media screen and (max-width: 1250px) {
       @content;
     }
-  }
-  @else if ($breakpoint ==  'mini') {
+  } @else if ($breakpoint == "mini") {
     @media screen and (max-width: 500px) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $breakpoint) {
       @content;
     }
   }
