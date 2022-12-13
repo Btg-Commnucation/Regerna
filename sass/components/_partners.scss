@@ -33,7 +33,7 @@
 .partners__list {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   align-items: start;
   height: 100%;
   padding-top: 4rem;
@@ -95,7 +95,9 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 5.7rem;
   row-gap: 2.8rem;
-  place-items: center;
+  justify-items: center;
+  align-items: start;
+  height: 75%;
 
   @include var.breakpoint(tablet) {
     grid-template-columns: repeat(2, 1fr);

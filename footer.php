@@ -8,17 +8,18 @@
         <div class="right">
             <h4>Scientific Coordinator :</h4>
             <p>
-                <strong>Professeur Philippe Menasché</strong> <br/>
-                Service de Chirurgie Cardiovasculaire, Hôpital Européen Georges Pompidou<br/>
-                Inserm, U970, PARCC (Paris-Centre de Recherche Cardiovasculaire)<br/>
-                Regenerative Therapies for Cardiac and Vascular Diseases<br/>
+                <strong>Professeur Philippe Menasché</strong> <br />
+                Service de Chirurgie Cardiovasculaire, Hôpital Européen Georges Pompidou<br />
+                Inserm, U970, PARCC (Paris-Centre de Recherche Cardiovasculaire)<br />
+                Regenerative Therapies for Cardiac and Vascular Diseases<br />
                 20, rue Leblanc, 75015 Paris
             </p>
             <strong class="project-manager">Project Manager:</strong>
-            <p>Cécile Gozlan, inserm-Transfet, France</p>
+            <p>Cécile Gozlan, Inserm-Transfert, France</p>
         </div>
     </div>
 </footer>
 <?php wp_footer(); ?>
 </body>
+
 </html>
